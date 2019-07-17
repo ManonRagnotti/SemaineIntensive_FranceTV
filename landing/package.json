@@ -1,0 +1,28 @@
+{
+  "name": "semaineintensive_francetv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManonRagnotti/SemaineIntensive_FranceTV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManonRagnotti/SemaineIntensive_FranceTV/issues"
+  },
+  "homepage": "https://github.com/ManonRagnotti/SemaineIntensive_FranceTV#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
