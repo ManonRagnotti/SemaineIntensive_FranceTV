@@ -1,2 +1,2 @@
-# SemaineIntensive_FranceTV_Landing
-Landing page projet semaine intensive pour FranceTV
+# SemaineIntensive_FranceTV
+Projet semaine intensive pour FranceTV
