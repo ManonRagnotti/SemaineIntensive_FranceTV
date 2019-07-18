@@ -77,14 +77,30 @@ main {
 			position: relative;
 			z-index: 50;
 				.grid {
-					padding-top: 135px;
+					padding-top: 197px;
 					display: flex;
 					flex-wrap: wrap;
-					.img {
-						width: 95px;
-					  height: 95px;
-					  border: solid 1px $darkgrey;
-					  background-color: $lightgrey;
+					.subtitle {
+						display: flex;
+						align-items: center;
+						.img {
+							width: 95px;
+							height: 95px;
+							background-color: rgba(255, 119, 57, 0.4);
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							img {
+								width: 50px;
+							}
+						}
+						h3 {
+							width: 351px;
+							font-family: brownBold;
+							font-size: 32px;
+							color: $orange;
+							margin-left: 40px;
+						}
 					}
 					p {
 						width: 351px;
@@ -94,13 +110,13 @@ main {
 						color: $white;
 					}
 					.bloc2{
-						margin-left: 220px;
+						margin-left: 130px;
 					}
 					.bloc3 {
 						margin-top: 100px;
 					}
 					.bloc4 {
-						margin-left: 220px;
+						margin-left: 130px;
 						margin-top: 100px;
 					}
 				}
@@ -109,7 +125,7 @@ main {
 		.textAnim {
 			position: absolute;
 			top: 0;
-			margin-top: 550px;
+			margin-top: 600px;
 			display: block;
 			// animation: titleTracking 15s linear infinite;
 
@@ -162,7 +178,7 @@ main {
 						background-position: center;
 						display: flex;
 						h2 {
-							width: 375px;
+							width: 530px;
 							font-family: brownBold;
 							font-size: 40px;
 							margin: 0;
@@ -184,5 +200,3 @@ main {
 			}
 		}
 }
-
-
