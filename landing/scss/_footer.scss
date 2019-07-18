@@ -1,0 +1,106 @@
+/*
+* FOOTER
+*/
+
+footer {
+	height: 500px;
+	background: #1c1c1c;
+	position: relative;
+
+	nav {
+		margin: 0 165px 0 165px;
+		display: flex;
+		align-items: flex-end;
+		padding-top: 70px;
+		img {
+			margin-top: 2%;
+		}
+		ul {
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 60%;
+			margin-left: 200px;
+
+			li {
+				list-style: none;
+				font-family: brownRegular;
+				font-size: 16px;
+				cursor: pointer;
+			}
+		}
+		.puce {
+			width: 10px;
+		  height: 10px;
+			border-radius: 20px;
+		  background-color: #ff7739;
+		}
+	}
+
+	.blocNewsletter {
+		width: 610px;
+		height: 260px;
+		object-fit: contain;
+		background-color: #ff7739;
+		background: url(../asset/fond_newsletter_footer.png);
+		position: absolute;
+		bottom: 0;
+
+		h4 {
+			margin-top: 47px;
+			margin-left: 165px;
+			width: 226px;
+			font-family: brownBold;
+			font-size: 20px;
+			color: #ffffff;
+		}
+		p {
+			margin-top: 20px;
+			margin-left: 165px;
+			margin-bottom: 0;
+			width: 118px;
+			font-family: brownRegular;
+			font-size: 18px;
+			line-height: 1.67;
+			color: #ffffff;
+		}
+		hr {
+			margin-left: 165px;
+			width: 327px;
+  		border: solid 1px #ffffff;
+		}
+		button {
+			width: 200px;
+		  height: 35px;
+			margin-left: 165px;
+			border: none;
+		  background-color: #ffffff;
+			font-family: brownRegular;
+			font-size: 14px;
+			color: #ff7739;
+			margin-top: 20px;
+		}
+	}
+
+	.footer_nav {
+		margin-bottom: 30px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		ul {
+			margin: 0;
+			width: 100%;
+			.puce {
+				margin: 0 20px;
+			}
+		}
+	}
+
+	.background_texture {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		opacity: 0.1;
+	}
+}

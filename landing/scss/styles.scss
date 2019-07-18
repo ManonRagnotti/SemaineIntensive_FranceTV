@@ -1,160 +1,15 @@
-@font-face {
-	font-family: 'brownBold';
-	src: url(../asset/fonts/lineto-brown-bold.ttf) format("truetype");
-}
-@font-face {
-	font-family: 'brownBoldItalic';
-	src: url(../asset/fonts/lineto-brown-boldItalic.ttf) format("truetype");
-}
-@font-face {
-	font-family: 'brownItalic';
-	src: url(../asset/fonts/lineto-brown-italic.ttf) format("truetype");
-}
-@font-face {
-	font-family: 'brownLight';
-	src: url(../asset/fonts/lineto-brown-light.ttf) format("truetype");
-}
-@font-face {
-	font-family: 'brownRegular';
-	src: url(../asset/fonts/lineto-brown-regular.ttf) format("truetype");
-}
-
-/*
-* RESET CSS
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline; }
-  
-
-  
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block; }
-  
-  body {
-	line-height: 1; }
-  
-  ol, ul {
-	list-style: none; }
-  
-  blockquote, q {
-	quotes: none; }
-  
-  blockquote {
-	&:before, &:after {
-	  content: '';
-	  content: none; } }
-  
-  q {
-	&:before, &:after {
-	  content: '';
-	  content: none; } }
-  
-  table {
-	border-collapse: collapse;
-	border-spacing: 0; }
-
-/*
-* HEADER
-*/
-
-header {
-	background: #000000;
-	height: 100vh;
-
-		.container {
-			margin: 0 165px 0 165px;
-			height: 100%;
-
-			nav {
-				display: flex;
-				align-items: flex-end;
-
-				img {
-					margin-top: 2%;
-				}
-				ul {
-					color: #fff;
-					display: flex;
-					justify-content: space-between;
-					width: 60%;
-
-					li {
-						list-style: none;
-						font-family: brownRegular;
-						font-size: 16px;
-						cursor: pointer;
-					}
-				}
-			}
-
-			.content {
-				.quote {
-					position: absolute;
-					top: 160px;
-					left: 325px;
-					p {
-						margin-top: -72px;
-						margin-left: 110px;
-						width: 250px;
-					  height: 111px;
-					  font-family: brownRegular;
-					  font-size: 18px;
-					  color: #2e2e2e;
-					}
-				}
-				.playButton {
-					margin-top: 200px;
-					h1 {
-						font-family: brownBold;
-						font-size: 55px;
-						text-align: justify;
-						color: #ffffff;
-					}
-				}
-				.player {
-					img {
-						position: absolute;
-						bottom: 0;
-						width: 450px;
-						margin-left: 400px;
-					}
-				}
-			}
-		}
-
-		.socialBar {
-			background-color: #ff7739;
-			width: 70px;
-			height: 100vh;
-			z-index: 100;
-			display: flex;
-			flex-direction: column;
-			position: fixed;
-			top: 0;
-			bottom: initial;
-			right: 5em;
-			transition: all 0.5s ease-in;
-		}
-		.socialBar.fixed {
-			top: initial;
-			bottom: 5em;
-			height: 10vh;
-			transition: all 0.5s ease-in;
-		}
-}
+@import "base";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "footer";
 
 /*
 * CONTENT
 */
 main {
 	.container {
-		margin: 0 165px 0 165px;
+		margin: 0 11.5%;
 
 		/*
 		* BLOC EXPLICATION
@@ -166,7 +21,7 @@ main {
 				width: 600px;
 				font-family: brownBold;
 				font-size: 40px;
-				color: #000000;
+				color: $black;
 			}
 			p {
 				margin-top: 25px;
@@ -174,17 +29,17 @@ main {
 			  font-family: brownRegular;
 			  font-size: 16px;
 			  line-height: 1.67;
-			  color: #000000;
+			  color: $black;
 			}
 			button {
 				margin-top: 55px;
 				border: none;
 				width: 260px;
 				height: 50px;
-				background-color: #ff7739;
+				background-color: $orange;
 				font-family: brownBold;
 				font-size: 16px;
-				color: #ffffff;
+				color: $white;
 			}
 		}
 
@@ -192,7 +47,7 @@ main {
 			width: 565px;
 			height: 520px;
 			margin-top: 100px;
-			background-color: #ff7739;
+			background-color: $orange;
 			background: url(../asset/fond_mockup.png);
 			position: absolute;
 			top: 0;
@@ -214,7 +69,7 @@ main {
 		position: relative;
 		height: 850px;
 		margin-top: 182px;
-		background-color: #000;
+		background-color: $black;
 		background: url(../asset/fond_confiance.png);
 		background-position: center;
 		.container {
@@ -228,15 +83,15 @@ main {
 					.img {
 						width: 95px;
 					  height: 95px;
-					  border: solid 1px #979797;
-					  background-color: #d8d8d8;
+					  border: solid 1px $darkgrey;
+					  background-color: $lightgrey;
 					}
 					p {
 						width: 351px;
 						font-family: brownRegular;
 						font-size: 20px;
 						margin-top: 30px;
-						color: #FFF;
+						color: $white;
 					}
 					.bloc2{
 						margin-left: 220px;
@@ -280,7 +135,7 @@ main {
 					width: 395px;
 					font-family: brownBold;
 					font-size: 40px;
-					color: #000000;
+					color: $black;
 				}
 
 				.partners {
@@ -290,8 +145,8 @@ main {
 					.img {
 						width: 135px;
 						height: 135px;
-						border: solid 1px #979797;
-						background-color: #d8d8d8;
+						border: solid 1px $darkgrey;
+						background-color: $lightgrey;
 					}
 				}
 
@@ -312,16 +167,16 @@ main {
 							font-size: 40px;
 							margin: 0;
 							margin-left: 33px;
-							color: #ff7739;
+							color: $orange;
 						}
 						button {
 							border: none;
 							width: 260px;
 							height: 50px;
-							background-color: #ff7739;
+							background-color: $orange;
 							font-family: brownBold;
 							font-size: 16px;
-							color: #ffffff;
+							color: $white;
 							margin-left: 62px;
 						}
 					}
@@ -330,105 +185,4 @@ main {
 		}
 }
 
-footer {
-	height: 500px;
-	background: #1c1c1c;
-	position: relative;
 
-	nav {
-		margin: 0 165px 0 165px;
-		display: flex;
-		align-items: flex-end;
-		padding-top: 70px;
-		img {
-			margin-top: 2%;
-		}
-		ul {
-			color: #fff;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 60%;
-			margin-left: 200px;
-
-			li {
-				list-style: none;
-				font-family: brownRegular;
-				font-size: 16px;
-				cursor: pointer;
-			}
-		}
-		.puce {
-			width: 10px;
-		  height: 10px;
-			border-radius: 20px;
-		  background-color: #ff7739;
-		}
-	}
-
-	.blocNewsletter {
-		width: 610px;
-		height: 260px;
-		object-fit: contain;
-		background-color: #ff7739;
-		background: url(../asset/fond_newsletter_footer.png);
-		position: absolute;
-		bottom: 0;
-
-		h4 {
-			margin-top: 47px;
-			margin-left: 165px;
-			width: 226px;
-			font-family: brownBold;
-			font-size: 20px;
-			color: #ffffff;
-		}
-		p {
-			margin-top: 20px;
-			margin-left: 165px;
-			margin-bottom: 0;
-			width: 118px;
-			font-family: brownRegular;
-			font-size: 18px;
-			line-height: 1.67;
-			color: #ffffff;
-		}
-		hr {
-			margin-left: 165px;
-			width: 327px;
-  		border: solid 1px #ffffff;
-		}
-		button {
-			width: 200px;
-		  height: 35px;
-			margin-left: 165px;
-			border: none;
-		  background-color: #ffffff;
-			font-family: brownRegular;
-			font-size: 14px;
-			color: #ff7739;
-			margin-top: 20px;
-		}
-	}
-
-	.footer_nav {
-		margin-bottom: 30px;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		ul {
-			margin: 0;
-			width: 100%;
-			.puce {
-				margin: 0 20px;
-			}
-		}
-	}
-
-	.background_texture {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		opacity: 0.1;
-	}
-}
