@@ -20,6 +20,13 @@
 }
 
 /*
+* GENERAL
+*/
+body {
+	margin: 0;
+}
+
+/*
 * HEADER
 */
 
@@ -48,6 +55,7 @@ header {
 						list-style: none;
 						font-family: brownRegular;
 						font-size: 16px;
+						cursor: pointer;
 					}
 				}
 			}
@@ -195,31 +203,43 @@ main {
 				width: 565px;
 				height: 710px;
 				background-color: #ff7739;
+				background: url(../asset/fond_mockup.png);
 				position: absolute;
 				top: 0;
 				right: -165px;
 				margin-top: 170px;
+				img {
+					position: absolute;
+					margin-top: 50px;
+					left: -90px;
+				}
 			}
 		}
 	}
 
 	/*
-	* BLACK CONTAINER
+	* BLACK CONTAINER : ILS NOUS FONT CONFIANCE
 	*/
 	.blackContainer {
+		position: relative;
+		height: 750px;
 		margin-top: 90px;
 		background-color: #000;
+		background: url(../asset/fond_confiance.png);
+		background-position: center;
 		.container {
 			margin: 0 165px 0 165px;
+			position: relative;
+			z-index: 50;
 			h2 {
 				padding-top: 75px;
 				width: 519px;
 				font-family: brownBold;
-				font-size: 45px;
+				font-size: 40px;
 				color: #ffffff;
 			}
 			.contentChange {
-				margin-top: 184px;
+				margin-top: 160px;
 				display: flex;
 				img {
 					width: 150px;
@@ -242,10 +262,217 @@ main {
 						line-height: 2;
 						color: #FFF;
 					}
+					span {
+						width: 70px;
+					  font-family: brownRegular;
+					  font-size: 13px;
+					  font-weight: 300;
+					  line-height: 1.92;
+					  color: #ff7739;
+					}
 
+					.arrowButton{
+						display: flex;
+						justify-content: flex-end;
+						align-items: center;
+						margin-top: 35px;
+						p {
+							width: 69px;
+							font-family: brownBold;
+							font-size: 14px;
+							color: #ffffff;
+						}
+						div {
+							img {
+								width: 40px;
+								height: 40px;
+							}
+						}
+						.left {
+							margin-left: 20px;
+						}
+						.right {
+							margin-left: 30px;
+							margin-right: 20px;
+						}
+					}
 				}
+			}
+		}
+
+		.textAnim {
+			position: absolute;
+			top: 0;
+			margin-top: 510px;
+			display: block;
+			// animation: titleTracking 15s linear infinite;
+
+			@keyframes titleTracking {
+	      0% { left: 100%; }
+	      100% { left: -100%; }
+    	}
+		}
+	}
+
+	/*
+	* LAST CONTAINER : LES COMMENTAIRES A NE PAS MANQUER
+	*/
+		.lastBloc {
+			position: relative;
+			margin-top: 90px;
+			margin-bottom: 140px;
+			.container {
+				margin: 0 165px 0 165px;
+				position: relative;
+				h2 {
+					margin-top: 87px;
+					width: 395px;
+					font-family: brownBold;
+					font-size: 40px;
+					color: #000000;
+				}
+
+				.newsletter {
+					margin-top: 250px;
+					.cadre {
+						width: 732px;
+						height: 122px;
+						margin: 0 auto;
+						align-items: center;
+						background: url(../asset/path.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						display: flex;
+						h2 {
+							width: 375px;
+							font-family: brownBold;
+							font-size: 40px;
+							margin: 0;
+							margin-left: 33px;
+							color: #ff7739;
+						}
+						button {
+							border: none;
+							width: 260px;
+							height: 50px;
+							background-color: #ff7739;
+							font-family: brownBold;
+							font-size: 16px;
+							color: #ffffff;
+							margin-left: 62px;
+						}
+					}
+				}
+			}
+		}
+}
+
+footer {
+	height: 500px;
+	background: #1c1c1c;
+	position: relative;
+
+	.scrollTo {
+		position: absolute;
+		right: 0;
+		margin-top: 68px;
+		margin-right: 62px;
+	}
+
+	nav {
+		margin: 0 165px 0 165px;
+		display: flex;
+		align-items: flex-end;
+		padding-top: 70px;
+		img {
+			margin-top: 2%;
+		}
+		ul {
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 60%;
+			margin-left: 200px;
+
+			li {
+				list-style: none;
+				font-family: brownRegular;
+				font-size: 16px;
+				cursor: pointer;
+			}
+		}
+		.puce {
+			width: 10px;
+		  height: 10px;
+			border-radius: 20px;
+		  background-color: #ff7739;
+		}
+	}
+
+	.blocNewsletter {
+		width: 610px;
+		height: 260px;
+		object-fit: contain;
+		background-color: #ff7739;
+		background: url(../asset/fond_newsletter_footer.png);
+		position: absolute;
+		bottom: 0;
+
+		h4 {
+			margin-top: 47px;
+			margin-left: 165px;
+			width: 226px;
+			font-family: brownBold;
+			font-size: 20px;
+			color: #ffffff;
+		}
+		p {
+			margin-top: 20px;
+			margin-left: 165px;
+			margin-bottom: 0;
+			width: 118px;
+			font-family: brownRegular;
+			font-size: 18px;
+			line-height: 1.67;
+			color: #ffffff;
+		}
+		hr {
+			margin-left: 165px;
+			width: 327px;
+  		border: solid 1px #ffffff;
+		}
+		button {
+			width: 200px;
+		  height: 35px;
+			margin-left: 165px;
+			border: none;
+		  background-color: #ffffff;
+			font-family: brownRegular;
+			font-size: 14px;
+			color: #ff7739;
+			margin-top: 20px;
+		}
+	}
+
+	.footer_nav {
+		margin-bottom: 30px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		ul {
+			margin: 0;
+			width: 100%;
+			.puce {
+				margin: 0 20px;
 			}
 		}
 	}
 
+	.background_texture {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		opacity: 0.1;
+	}
 }
