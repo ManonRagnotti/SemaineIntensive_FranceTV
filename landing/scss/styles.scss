@@ -16,6 +16,28 @@ main {
 			color: green;
 		}
 	}
+	.swiper-container .swiper-button-prev {
+		top: 80%!important;
+		left: 11.5%!important;
+		background-image: none!important;
+		width: 44px!important;
+	}
+	.swiper-container .swiper-button-next {
+		top: 80%!important;
+		left: 17.25%!important;
+		background-image: none!important;
+		width: 44px!important;
+	}
+	.swiper-container .swiper-pagination {
+		bottom: 0!important;
+    left: 11.5%;
+    width: auto!important;
+    top: 75px;
+    .swiper-pagination-bullet {
+    	margin-right: 50px;
+    	background: $orange!important;
+    }
+	}
 	.customSwiper {
 		display: flex;
 		justify-content: space-between;
@@ -47,11 +69,36 @@ main {
 				color: $orange;
 			}
 		}
-		.img {
+		.img1 {
 			width: 490px;
 			position: absolute;
 			margin-top: 150px;
 			right: 11.5%;
+		}
+		.img2{
+			width: 625px;
+			position: absolute;
+			margin-top: 100px;
+			right: 0;
+		}
+		.img3 {
+			right: 11.5%;
+			.character {
+				width: 70px;
+				margin: 30px 0 10px 80px;
+
+				img {
+					border: 2px solid $orange;
+					border-radius: 50%;
+				}
+			}
+
+			.quote {
+				font-size: 24px;
+				font-family: brownRegular;
+				line-height: 36px;
+				margin: 0 0 10px 80px;
+			}
 		}
 	}
 
