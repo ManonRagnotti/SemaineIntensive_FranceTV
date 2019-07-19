@@ -22,7 +22,8 @@
     "cssnano": "^4.1.10",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "swiper": "^4.5.0"
   },
   "dependencies": {
     "gulp": "^4.0.2",

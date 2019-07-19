@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
   <title>FranceTV</title>
-  <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./node_modules/swiper/dist/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="..." />
@@ -67,38 +66,51 @@
   <main>
 
     <!-- BLOC EXPLICATION -->
-    <div class="slider" id="wrapper">
-      <div class="container">
-        <div class="content">
-          <h2>Avec l’enceinte connectée Google Nest Hub</h2>
-          <p class="orangeText">Ne ratez rien de vos matchs préférés<br></p>
-          <p>Connectez Google Nest Hub à votre TV pour visionner les vidéos de résumés et de moments forts des matchs de Rolland Garros</p>
-          <div class="orangeBloc">
-            <img src="./asset/mockup.png" alt="mockup">
-          </div>
+    <!-- Slider main container -->
+    <div class="swiper-container" id="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide customSwiper">
+              <div class="content">
+                <h2>Avec l’enceinte connectée Google Nest Hub</h2>
+                <p class="orangeText">Ne ratez rien de vos matchs préférés<br></p>
+                <p>Connectez Google Nest Hub à votre TV pour visionner les vidéos de résumés et de moments forts des matchs de Rolland Garros</p>
+              </div>
+              <div class="img">
+                <img src="./asset/mockup.png" alt="mockup">
+              </div>
+            </div>
+            <div class="swiper-slide customSwiper">
+              <div class="content">
+                <h2>Toutes les vidéos des moments forts</h2>
+                <p class="orangeText">Choisissez votre vidéo<br></p>
+                <p>Une variété de contenus FranceTV est disponible à partir de votre HUB. Temps fort sur la journée, match en rediffusion complète ou encore statistiques avancées…</p>
+              </div>
+              <div class="img">
+                <img src="./asset/mockup.png" alt="mockup">
+              </div>
+            </div>
+            <div class="swiper-slide customSwiper">
+              <div class="content">
+                <h2>Parlons peu,<br>parlons sport</h2>
+                <p class="orangeText">Commentez, intéragissez et partagez<br></p>
+                <p>A tout moment laissez un commentaire sur un passage qui vous a intéressé. Votre commentaire sera audible par toute la communauté TennisHub.</p>
+              </div>
+              <div class="img">
+                <img src="./asset/mockup.png" alt="mockup">
+              </div>
+            </div>
+            ...
         </div>
-      </div>
-      <!--<div class="container">
-        <div class="content">
-          <h2>Toutes les vidéos des moments forts</h2>
-          <p class="orangeText">Choisissez votre vidéo<br></p>
-          <p>Une variété de contenus FranceTV est disponible à partir de votre HUB. Temps fort sur la journée, match en rediffusion complète ou encore statistiques avancées…</p>
-          <div class="orangeBloc">
-            <img src="./asset/mockup.png" alt="mockup">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="content">
-          <h2>Parlons peu,<br>parlons sport</h2>
-          <p class="orangeText">Commentez, intéragissez et partagez<br></p>
-          <p>A tout moment laissez un commentaire sur un passage qui vous a intéressé. Votre commentaire sera audible par toute la communauté TennisHub</p>
-          <div class="orangeBloc">
-            <img src="./asset/mockup.png" alt="mockup">
-          </div>
-        </div>
-      </div>-->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
+    <div class="orangeBloc"></div>
 
     <!-- BLACK CONTAINER : TUTO -->
     <div class="blackContainer">
@@ -241,18 +253,8 @@
       <img src="../asset/fond_footer.png" alt="texture">
     </div>
   </footer>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/slick.min.js"></script>
-  <script src="js/index.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.slider').slick({
-        dots: true,
-        arrows: true,
-        autoplay: false,
-      });
-    }
-  </script>
+  <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
