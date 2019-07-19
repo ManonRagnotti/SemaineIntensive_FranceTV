@@ -13,17 +13,17 @@
 </head>
 <body>
 
-  <header id="header">
+  <header id="header" id="à_propos">
       <img class="player" src="./asset/player.png" alt="player">
       <div class="shadow"></div>
     <div class="container">
       <nav>
         <img src="./asset/Logo.png" alt="logo">
         <ul>
-          <li><a href="">À propos</a></li>
-          <li><a href="">Comment ça marche ?</a></li>
-          <li><a href="">Les commentaires</a></li>
-          <li><a href="">Demarrer</a></li>
+          <li><a href="#à_propos">À propos</a></li>
+          <li><a href="#swiper">Comment ça marche ?</a></li>
+          <li><a href="#commentaire">Les commentaires</a></li>
+          <li><a href="#démarrer">Demarrer</a></li>
         </ul>
       </nav>
 
@@ -77,7 +77,7 @@
                 <p class="orangeText">Ne ratez rien de vos matchs préférés<br></p>
                 <p>Connectez Google Nest Hub à votre TV pour visionner les vidéos de résumés et de moments forts des matchs de Rolland Garros</p>
               </div>
-              <div class="img">
+              <div class="img1">
                 <img src="./asset/mockup.png" alt="mockup">
               </div>
             </div>
@@ -87,8 +87,8 @@
                 <p class="orangeText">Choisissez votre vidéo<br></p>
                 <p>Une variété de contenus FranceTV est disponible à partir de votre HUB. Temps fort sur la journée, match en rediffusion complète ou encore statistiques avancées…</p>
               </div>
-              <div class="img">
-                <img src="./asset/mockup.png" alt="mockup">
+              <div class="img2">
+                <img src="./asset/mockup2.png" alt="mockup">
               </div>
             </div>
             <div class="swiper-slide customSwiper">
@@ -97,8 +97,10 @@
                 <p class="orangeText">Commentez, intéragissez et partagez<br></p>
                 <p>A tout moment laissez un commentaire sur un passage qui vous a intéressé. Votre commentaire sera audible par toute la communauté TennisHub.</p>
               </div>
-              <div class="img">
-                <img src="./asset/mockup.png" alt="mockup">
+              <div class="img3">
+                <div class="character"><img src="./asset/character.png"></div>
+                <p class="quote">« Cette action de Federer était magistrale, quelle vitesse incroyable !  »</p>
+                <div class="img"><img src="./asset/mockup3.png" alt="mockup"></div>
               </div>
             </div>
             ...
@@ -107,8 +109,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"><img src="./asset/arrowLeft.png"></div>
+        <div class="swiper-button-next"><img src="./asset/arrowRight.png"></div>
     </div>
     <div class="orangeBloc"></div>
 
@@ -168,7 +170,7 @@
       </div>
     </div>
 
-    <div class="lastBloc">
+    <div class="lastBloc" id="commentaire">
       <div class="blocCommentaire">
           <div class="replay1">
             <img src="./asset/replay1.png" alt="replay1">
@@ -207,7 +209,7 @@
           </div>
         </div>
 
-        <div class="newsletter">
+        <div class="newsletter" id="démarrer">
           <div class="cadre">
               <h2>Démarrer l'expérience</h2>
               <button type="button" name="button">

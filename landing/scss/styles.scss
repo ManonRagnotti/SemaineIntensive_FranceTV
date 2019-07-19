@@ -16,6 +16,28 @@ main {
 			color: green;
 		}
 	}
+	.swiper-container .swiper-button-prev {
+		top: 80%!important;
+		left: 11.5%!important;
+		background-image: none!important;
+		width: 44px!important;
+	}
+	.swiper-container .swiper-button-next {
+		top: 80%!important;
+		left: 17.25%!important;
+		background-image: none!important;
+		width: 44px!important;
+	}
+	.swiper-container .swiper-pagination {
+		bottom: 0!important;
+    left: 11.5%;
+    width: auto!important;
+    top: 75px;
+    .swiper-pagination-bullet {
+    	margin-right: 50px;
+    	background: $orange!important;
+    }
+	}
 	.customSwiper {
 		display: flex;
 		justify-content: space-between;
@@ -26,7 +48,7 @@ main {
 			width: auto;
 
 			h2 {
-				padding-top: 112px;
+				padding-top: 150px;
 				width: 590px;
 				font-family: brownBold;
 				font-size: 40px;
@@ -47,17 +69,47 @@ main {
 				color: $orange;
 			}
 		}
-		.img {
+		.img1 {
 			width: 490px;
 			position: absolute;
 			margin-top: 150px;
 			right: 11.5%;
 		}
+		.img2{
+			width: 625px;
+			position: absolute;
+			margin-top: 100px;
+			right: 0;
+		}
+		.img3 {
+			right: 11.5%;
+			.character {
+				width: 70px;
+				margin: 50px 0 10px 200px;
+
+				img {
+					border: 2px solid $orange;
+					border-radius: 50%;
+				}
+			}
+
+			.quote {
+				font-size: 24px;
+				font-family: brownRegular;
+				opacity: 0.8;
+				line-height: 36px;
+				margin: 0 0 10px 200px;
+			}
+
+			.img { 
+				margin-top: 50px;
+			}
+		}
 	}
 
 	.orangeBloc {
 		width: 520px;
-		height: 520px;
+		height: 680px;
 		background-color: $orange;
 		background: url(../asset/fond_mockup.png);
 		position: absolute;
@@ -130,7 +182,7 @@ main {
 			top: 0;
 			margin-top: 600px;
 			display: block;
-			// animation: titleTracking 15s linear infinite;
+			animation: titleTracking 15s linear infinite;
 
 			@keyframes titleTracking {
 	      0% { left: 100%; }
