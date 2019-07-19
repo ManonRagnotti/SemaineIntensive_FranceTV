@@ -8,6 +8,11 @@
 * CONTENT
 */
 main {
+
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
 	.container {
 		margin: 0 11.5%;
 
@@ -18,7 +23,7 @@ main {
 			position: relative;
 			h2 {
 				padding-top: 112px;
-				width: 600px;
+				width: 590px;
 				font-family: brownBold;
 				font-size: 40px;
 				color: $black;
@@ -30,6 +35,10 @@ main {
 			  font-size: 16px;
 			  line-height: 1.67;
 			  color: $black;
+			}
+			.orangeText {
+				margin-top: 30px;
+				color: $orange;
 			}
 			button {
 				margin-top: 55px;
@@ -161,7 +170,7 @@ main {
 					.img {
 						width: 135px;
 						height: 135px;
-						border: solid 1px $darkgrey;
+						border: solid 1px $grey;
 						background-color: $lightgrey;
 					}
 				}

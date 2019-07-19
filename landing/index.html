@@ -5,7 +5,7 @@
   <title>FranceTV</title>
   <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="..." />
 </head>
@@ -16,11 +16,11 @@
       <nav>
         <img src="./asset/LOGO.png" alt="logo">
         <ul>
-          <li>Accueil</li>
-          <li>À propos</li>
-          <li>Comment ça marche ?</li>
-          <li>Nos utilisateurs</li>
-          <li>Contact</li>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">À propos</a></li>
+          <li><a href="">Comment ça marche ?</a></li>
+          <li><a href="">Nos utilisateurs</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
 
@@ -49,37 +49,55 @@
 
     <div class="socialBar">
       <ul class="listSocial">
-        <li><img src="./asset/svg/003-instagram.svg"></li>
-        <li><img src="./asset/svg/004-twitter-logo-silhouette.svg"></li>
-        <li><img src="./asset/svg/005-facebook-logo.svg"></li>
-        <li><img src="./asset/svg/006-youtube.svg"></li>
+        <li class="socialIcon"><img src="./asset/svg/003-instagram.svg"></li>
+        <li class="socialIcon"><img src="./asset/svg/004-twitter-logo-silhouette.svg"></li>
+        <li class="socialIcon"><img src="./asset/svg/005-facebook-logo.svg"></li>
+        <li class="socialIcon"><img src="./asset/svg/006-youtube.svg"></li>
       </ul>
-
+      <p class="quote">commencer</p>
       <div class="scrollTo">
-        <img src="./asset/scrollToTop.png" alt="scrollTo">
+        <a href="#">
+          <img src="./asset/scrollToTop.png" alt="scrollTo">
+          <p>Suivez-nous</p>
+        </a>
       </div>
-
-      <a href="">Suivez-nous</a>
     </div>
   </header>
 
   <main>
-    <div class="container">
 
-      <!-- BLOC EXPLICATION -->
-      <div class="content">
-        <h2>Avec l’enceinte connectée Google Nest Hub</h2>
-        <p>
-          Ne ratez rien de vos matchs préférés.
-          <br> <br>
-          Connectez Google Nest Hub à votre TV pour visionner les vidéos de résumés et de moments forts des matchs de Rolland Garros.
-        </p>
-
-        <div class="orangeBloc">
-          <img src="./asset/mockup.png" alt="mockup">
+    <!-- BLOC EXPLICATION -->
+    <div class="slider" id="wrapper">
+      <div class="container">
+        <div class="content">
+          <h2>Avec l’enceinte connectée Google Nest Hub</h2>
+          <p class="orangeText">Ne ratez rien de vos matchs préférés<br></p>
+          <p>Connectez Google Nest Hub à votre TV pour visionner les vidéos de résumés et de moments forts des matchs de Rolland Garros</p>
+          <div class="orangeBloc">
+            <img src="./asset/mockup.png" alt="mockup">
+          </div>
         </div>
-
       </div>
+      <!--<div class="container">
+        <div class="content">
+          <h2>Toutes les vidéos des moments forts</h2>
+          <p class="orangeText">Choisissez votre vidéo<br></p>
+          <p>Une variété de contenus FranceTV est disponible à partir de votre HUB. Temps fort sur la journée, match en rediffusion complète ou encore statistiques avancées…</p>
+          <div class="orangeBloc">
+            <img src="./asset/mockup.png" alt="mockup">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <h2>Parlons peu,<br>parlons sport</h2>
+          <p class="orangeText">Commentez, intéragissez et partagez<br></p>
+          <p>A tout moment laissez un commentaire sur un passage qui vous a intéressé. Votre commentaire sera audible par toute la communauté TennisHub</p>
+          <div class="orangeBloc">
+            <img src="./asset/mockup.png" alt="mockup">
+          </div>
+        </div>
+      </div>-->
     </div>
 
     <!-- BLACK CONTAINER : TUTO -->
@@ -222,12 +240,19 @@
     <div class="background_texture">
       <img src="../asset/fond_footer.png" alt="texture">
     </div>
-
-
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/slick.min.js"></script>
   <script src="js/index.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.slider').slick({
+        dots: true,
+        arrows: true,
+        autoplay: false,
+      });
+    }
+  </script>
 </body>
 </html>
