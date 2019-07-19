@@ -8,7 +8,7 @@
 * CONTENT
 */
 main {
-	
+	position: relative;
 	#swiper {
 		z-index: 2!important;
 
@@ -50,7 +50,7 @@ main {
 		.img {
 			width: 490px;
 			position: absolute;
-			margin-top: 100px;
+			margin-top: 150px;
 			right: 11.5%;
 		}
 	}
@@ -61,7 +61,7 @@ main {
 		background-color: $orange;
 		background: url(../asset/fond_mockup.png);
 		position: absolute;
-		top: 675px;
+		top: 100px;
 		right: 0;
 		z-index: 1;
 	}
@@ -146,6 +146,26 @@ main {
 			position: relative;
 			margin-top: 90px;
 			margin-bottom: 140px;
+
+			.blocCommentaire {
+				display: flex;
+				position: absolute;
+				top: 0;
+				margin-top: -140px;
+				right: 0;
+				.replay1 {
+					width: 255px;
+				}
+				.replay2 {
+					width: 255px;
+					margin-left: 31px;
+				}
+				.replay3 {
+					width: 230px;
+					margin-left: 31px;
+				}
+			}
+
 			.container {
 				margin: 0 165px 0 165px;
 				position: relative;
@@ -156,7 +176,6 @@ main {
 					font-size: 40px;
 					color: $black;
 				}
-
 				.partners {
 					display: flex;
 					justify-content: space-between;
@@ -164,8 +183,11 @@ main {
 					.img {
 						width: 135px;
 						height: 135px;
-						border: solid 1px $grey;
-						background-color: $lightgrey;
+						// border: solid 1px $grey;
+						// background-color: $lightgrey;
+						display: flex;
+						justify-content: center;
+    					align-items: center;
 					}
 				}
 

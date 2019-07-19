@@ -4,7 +4,7 @@
 
 header {
 	background: #000000;
-	height: 80vh;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	background: radial-gradient(#111, #000);
@@ -149,6 +149,7 @@ header {
 				a {
 					color: $white;
 					text-decoration: none;
+					font-family: brownBold;
 				}
 
 				img {
