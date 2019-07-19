@@ -73,14 +73,15 @@ footer {
 		}
 		button {
 			width: 200px;
-		  height: 35px;
+		  	height: 35px;
 			margin-left: 165px;
 			border: none;
-		  background-color: #ffffff;
+		  	background-color: #ffffff;
 			font-family: brownRegular;
 			font-size: 14px;
 			color: #ff7739;
 			margin-top: 20px;
+			cursor: pointer;
 		}
 	}
 
@@ -92,6 +93,7 @@ footer {
 		ul {
 			margin: 0;
 			width: 100%;
+			cursor: pointer;
 			.puce {
 				margin: 0 20px;
 			}

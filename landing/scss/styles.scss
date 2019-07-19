@@ -155,14 +155,17 @@ main {
 				right: 0;
 				.replay1 {
 					width: 255px;
+					cursor: pointer;
 				}
 				.replay2 {
 					width: 255px;
 					margin-left: 31px;
+					cursor: pointer;
 				}
 				.replay3 {
 					width: 230px;
 					margin-left: 31px;
+					cursor: pointer;
 				}
 			}
 
@@ -219,6 +222,7 @@ main {
 							font-size: 16px;
 							color: $white;
 							margin-left: 62px;
+							cursor: pointer;
 						}
 					}
 				}
