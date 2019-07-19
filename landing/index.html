@@ -2,25 +2,27 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-  <title>FranceTV</title>
+  <title>Tennis Hub</title>
   <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="..." />
 </head>
 <body>
 
-  <header>
+  <header id="header">
+      <img class="player" src="./asset/player.png" alt="player">
+      <div class="shadow"></div>
     <div class="container">
       <nav>
-        <img src="./asset/LOGO.png" alt="logo">
+        <img src="./asset/Logo.png" alt="logo">
         <ul>
-          <li><a href="">Accueil</a></li>
           <li><a href="">À propos</a></li>
           <li><a href="">Comment ça marche ?</a></li>
-          <li><a href="">Nos utilisateurs</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="">Les commentaires</a></li>
+          <li><a href="">Demarrer</a></li>
         </ul>
       </nav>
 
@@ -28,22 +30,18 @@
         <div class="quote">
           <img src="./asset/quote.png" alt="quote">
           <p>
-            À RolandGarros c'est #Nadal <br/>
-            le Boss, à #Wimbledon c'est <br/>
-            #Federer le maître. <br/>
-            Merci Messieurs, du fond <br/>
-            du cœur !
+            Magnifique coup de Raphael <br/>
+            Nadal sur la ligne ! <br/>
+            À Rolland Garros c'est <br/>
+            #Nadal le Boss !
           </p>
         </div>
-        <div class="title">
+        <div class="title" data-aos="fade-left" data-aos-duration="2000">
           <h1>
               Écoutez les commentaires <br>
-              sportifs les plus punchy <br>
+              sportifs les plus <span class="punchy">punchy</span> <br>
               des Français
           </h1>
-        <div class="player">
-          <img src="./asset/player.png" alt="playeur">
-        </div>
       </div>
     </div>
 
@@ -156,7 +154,7 @@
       </div>
     </div>
 
-    <div class="lastBloc">
+    <div class="lastBloc" data-aos="fade-left" data-aos-duration="2000">
       <div class="container">
         <h2>Les commentaires à ne pas manquer </h2>
 
@@ -244,6 +242,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/index.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -252,7 +251,7 @@
         arrows: true,
         autoplay: false,
       });
-    }
+    })
   </script>
 </body>
 </html>
